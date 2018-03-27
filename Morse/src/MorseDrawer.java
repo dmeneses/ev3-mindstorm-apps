@@ -3,6 +3,10 @@ public class MorseDrawer {
 
 	Drawer drawer;
 	
+	public MorseDrawer() {
+		drawer = new Drawer();
+	}
+	
 	public void draw(String string) {
 		String translatedMorse = MorseTranslator.translate(string);
 		char[] morseCode = translatedMorse.toCharArray();
