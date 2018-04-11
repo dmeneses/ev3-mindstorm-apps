@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class MorseTranslator {
 
@@ -17,6 +20,16 @@ public class MorseTranslator {
 			case ' ': return " ";
 			default: return "";
 		}
+	}
+
+	public static List<MorseCode> translateV2(String words) {
+		char[] wordsCharacters = words.toCharArray();
+		List<MorseCode> codes = new ArrayList<MorseCode>();
+		for (char character : wordsCharacters) {
+			codes.add(MorseCode.getMorseCodeFor(character));
+		}
+		return codes;
+		
 	}
 
 }

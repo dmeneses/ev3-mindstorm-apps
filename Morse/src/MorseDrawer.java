@@ -1,3 +1,5 @@
+import java.util.List;
+
 
 public class MorseDrawer {
 
@@ -18,6 +20,11 @@ public class MorseDrawer {
 			}
 		}
 		
+	}
+	
+	public void drawV2(String string) {
+		List<MorseCode> morseCodes = MorseTranslator.translateV2(string);
+		// TODO: FIND A WAY TO DRAW WITHOUT KNOWING IF IT'S ARE A LINE OR DOT.
 	}
 
 }
