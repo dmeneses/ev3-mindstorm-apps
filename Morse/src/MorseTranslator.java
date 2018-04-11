@@ -14,6 +14,7 @@ public class MorseTranslator {
 		switch(character) {
 			case 's': return "...";
 			case 'o': return "---";
+			case ' ': return " ";
 			default: return "";
 		}
 	}
